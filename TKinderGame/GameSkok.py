@@ -27,14 +27,13 @@ class protector:
         self.canvas.move(self.id, self.x, self.y)
         pos = self.canvas.coords(self.id) 
         if pos[1] <= 0:
-            self.y = random.randint(3, 5)
-        if pos [1] >= self.canvas_height - 90:
-            self.y = random.randint(-5, -3)
+            self.y = starts = random.randint(5, 10)
+        if pos [1] >= self.canvas_height - 100:
+            self.y = starts = random.randint(-10, -5)
         if pos [0] <= 0:
-            self.x = random.randint(3, 5)
-        if pos [0] >= self.canvas_width - 84:
-            self.x = random.randint(-5, -3)
-
+            self.x = starts = random.randint(5, 10)
+        if pos [0] >= self.canvas_width - 100:
+            self.x =starts = random.randint(-10, -5)
 class viruses:
     def __init__(self, canvas, moe):
         self.canvas = canvas
@@ -77,7 +76,6 @@ virus_list.append(viruses(c, skins[random.randint(0,3)]))
 NV_Time = time.time()
 Game_time = time.time()
 NV_period = 3.00
-c.im
 while 1:
     pp.draw();
     p_pos = c.coords(pp.id)
