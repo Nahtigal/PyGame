@@ -71,7 +71,8 @@ skins = (PhotoImage(file='vv.png'),
 img= PhotoImage(file='Leucocyte.png')
 virus_list = []
 pp= protector(c,img)
-virus_list.append(viruses(c, skins[random.randint(0,3)]))  
+virus_list.append(viruses(c, skins[random.randint(0,3)]))
+
 
 NV_Time = time.time()
 Game_time = time.time()
